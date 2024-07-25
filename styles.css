@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #5eb9f0;
+  --font-color: #606978;
+  --heading-color: #343f52;
+  --skyblue-color: #e5f4fd;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
