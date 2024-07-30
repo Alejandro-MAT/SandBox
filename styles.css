@@ -53,6 +53,9 @@ h3 {
   font-weight: 600;
 }
 
+img {
+  max-width: 100%;
+}
 
 nav {
   padding: 20px 0;
@@ -61,6 +64,10 @@ nav {
 .nav-container {
   display: flex;
   justify-content: space-between;
+
+  & ul {
+    display: none;
+  }
 }
 
 p {
@@ -105,6 +112,7 @@ ul {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* faq styles */
 
@@ -120,7 +128,7 @@ ul {
 
 .faqs-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 80px;
 }
 
@@ -135,12 +143,11 @@ ul {
   gap: 20px;
 }
 
-
- /* footer styles */
+/* footer styles */
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 
   & .btn-primary {
     justify-self: center;
@@ -166,6 +173,7 @@ ul {
 .hero-container {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -182,7 +190,8 @@ ul {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 /* services style */
@@ -199,7 +208,8 @@ ul {
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
 }
 
 .services-item {
@@ -242,7 +252,7 @@ ul {
   align-items: center;
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   background-color: var(--gray);
 }
 
@@ -261,14 +271,6 @@ ul {
   max-width: 520px;
   padding: 20px;
   position: relative;
-
-  &:nth-child(2) {
-    left: 50px;
-  }
-
-  &:nth-child(3) {
-    left: 20px;
-  }
 
   & .order {
     background-color: var(--skyblue-color);
@@ -289,7 +291,7 @@ ul {
 
 .team-container {
   display: grid;
-  grid-template-columns: 1fr 2fr auto;
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
@@ -311,21 +313,22 @@ ul {
 .team-list {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column: 1 / -1;
 }
 
 .team-stadistics {
   display: flex;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
 .team-stadistics-item {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
 
   & h3 {
     font-size: 41px;
@@ -353,7 +356,7 @@ ul {
 
 .testimonials-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 .testimonials-item {
@@ -372,5 +375,91 @@ ul {
   margin-top: 30px;
   & img {
     max-width: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faqs-container {
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-container {
+    flex-wrap: nowrap;
+
+    & h1 {
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 18px;
+    }
+  }
+
+  /* .nav-container {
+    & ul {
+      display: flex;
+    }
+  } */
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .strategy-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-stadistics-item {
+    gap: 10px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .faqs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-list {
+    grid-template-columns: repeat(3, 1fr);
+
+      .team-container {
+    grid-template-columns: 1fr 2fr auto;
+  }
+  }
+
+  .team-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+}
+
+@media (min-width: 1280px) {
+
+  .strategy-card {
+    &:nth-child(2) {
+      left: 50px;
+    }
+
+    &:nth-child(3) {
+      left: 20px;
+    }
   }
 }
