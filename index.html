@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <title>SandBox</title>
+
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <main>
@@ -22,7 +24,7 @@
             <img src="./img/logo-principal.svg" alt="logo" />
           </div>
 
-          <span>Menu</span>
+          <span class="btn-nav" id="btn-menu">Menu</span>
           <ul class="barr-nav">
             <li><a href="/">Demos</a></li>
             <li><a href="/">Pages</a></li>
@@ -30,6 +32,7 @@
             <li><a href="/">Blog</a></li>
             <li><a href="/">Blocks</a></li>
             <li><a href="/">Documentation</a></li>
+            <span class="btn-nav" id="btn-close">Close</span>
           </ul>
 
           <!-- <div class="btn-primary">contact</div> -->
@@ -71,37 +74,7 @@
           <h2>
             The service we offer is specifically designed to meet your needs.
           </h2>
-          <div class="services-list">
-            <div class="services-item">
-              <img src="./img/services/services-1.svg" alt="" />
-              <h3>Web Design</h3>
-              <p>
-                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
-                porta gravida at eget. Fusce dapibus tellus.
-              </p>
-              <a href="">Learn more</a>
-            </div>
-
-            <div class="services-item">
-              <img src="./img/services/services-2.svg" alt="" />
-              <h3>Graphic Design</h3>
-              <p>
-                Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel
-                augue laoreet. Sed posuere consectetur.
-              </p>
-              <a href="">Learn more</a>
-            </div>
-
-            <div class="services-item">
-              <img src="./img/services/services-3.svg" alt="" />
-              <h3>3D Animation</h3>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                Praesent commodo cursus magna scelerisque.
-              </p>
-              <a href="">Learn more</a>
-            </div>
-          </div>
+          <div class="services-list"></div>
         </div>
       </section>
 
@@ -126,29 +99,7 @@
 
           <div class="right">
             <div class="strategy-cards-container">
-              <div class="strategy-card">
-                <div class="order">01</div>
-                <div class="info">
-                  <h3>Collect Ideas</h3>
-                  <p>Nulla vitae elit libero pharetra augue dapibus.</p>
-                </div>
-              </div>
-              <div class="strategy-card">
-                <div class="order">02</div>
-                <div class="info">
-                  <h3>Data Analysis</h3>
-                  <p>Vivamus sagittis lacus vel augue laoreet.</p>
-                </div>
-              </div>
-
-              <div class="strategy-card">
-                <div class="order">03</div>
-                <div class="info">
-                  <h3>Finalize Product</h3>
-                  <p>Cras mattis consectetur purus sit amet.</p>
-                </div>
-              </div>
-            </div>
+            </div>  
           </div>
         </div>
       </section>
@@ -216,7 +167,7 @@
           </div>
 
           <div class="team-list">
-            <div class="team-item">
+            <!-- <div class="team-item">
               <img src="./img/team/team1.svg" alt="" />
               <h3>Coriss Ambady</h3>
               <p>Financial Analyst</p>
@@ -258,7 +209,7 @@
               <a href=""><img src="" alt="" /></a>
               <a href=""><img src="" alt="" /></a>
               <a href=""><img src="" alt="" /></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -269,21 +220,7 @@
           Check out some of our awesome projects with creative ideas and great
           design.
         </h2>
-        <div class="container projects-container">
-          <div class="project">
-            <img src="./img/projects/project1.svg" alt="" />
-            <h3>Cras Fermentum Sem</h3>
-            <p>Mobile Design</p>
-          </div>
-  
-          <div class="project">
-            <img src="./img/projects/project2.svg" alt="" />
-            <h3>Venenatis Euismod Vehicula</h3>
-            <p>Web Design</p>
-          </div>
-  
-        </div>
-
+        <div class="container projects-container"></div>
       </section>
 
       <section class="testimonials">
@@ -293,127 +230,10 @@
             Don't take our word for it. See what customers are saying about us.
           </h2>
 
-          <div class="testimonials-list">
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                auctor. Vestibulum id ligula porta felis euismod semper. Cras
-                justo odio dapibus facilisis sociis natoque penatibus.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team1.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Coriss Ambady</h4>
-                  <p>Financial Analyst</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Fusce dapibus, tellus ac cursus tortor mauris condimentum
-                fermentum massa justo sit amet. Vivamus sagittis lacus vel augue
-                laoreet rutrum faucibus dolor auctor. Cras mattis consectetur
-                purus sit amet fermentum. Aenean lacinia bibendum nulla sed.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team2.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Cory Zamora</h4>
-                  <p>Marketing Specialist</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel
-                augue laoreet rutrum faucibus dolor auctor. Nullam quis risus
-                eget porta ac consectetur vestibulum. Donec sed odio dui
-                consectetur adipiscing elit.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team3.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Nikolas Brooten</h4>
-                  <p>Sales Manager</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Etiam adipiscing tincidunt elit convallis felis suscipit ut.
-                Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris.
-                Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean
-                tortor libero condimentum ac laoreet vitae.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team4.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Coriss Ambady</h4>
-                  <p>Financial Analyst</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Donec id elit non mi porta gravida at eget metus. Nulla vitae
-                elit libero, a pharetra augue. Cum sociis natoque penatibus et
-                magnis dis parturient montes, nascetur ridiculus mus.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team5.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Laura Widerski</h4>
-                  <p>Sales Specialist</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-item">
-              <img src="" alt="" />
-              <p>
-                “Maecenas sed diam eget risus varius blandit sit amet non magna.
-                Cum sociis natoque penatibus magnis dis montes, nascetur
-                ridiculus mus. Donec sed odio dui. Nulla vitae elit libero.”
-              </p>
-
-              <div class="testimonials-author">
-                <div class="image">
-                  <img src="./img/team/team6.svg" alt="" />
-                </div>
-                <div class="bio">
-                  <h4>Jackie Sanders</h4>
-                  <p>Investment Planner</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="testimonials-list"></div>
         </div>
       </section>
-
+      <!-- faqs -->
       <section class="faqs">
         <div class="container faqs-container">
           <div class="left">
@@ -430,63 +250,7 @@
             <a class="btn-primary" href="">ALL FAQ</a>
           </div>
           <div class="right">
-            <div class="faqs-list">
-              <div class="faqs-item">
-                <details>
-                  <summary>How do I get my subscription receipt?</summary>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus officiis praesentium, recusandae hic commodi
-                    aliquam, unde sint cupiditate voluptates veritatis labore et
-                    minima architecto expedita! Accusamus perspiciatis harum
-                    repellat molestiae?
-                  </p>
-                </details>
-              </div>
-              <div class="faqs-item">
-                <div class="faqs-item">
-                  <details>
-                    <summary>
-                      Are there any discounts for people in need?
-                    </summary>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                      sed eaque temporibus nulla eum repellendus error
-                      necessitatibus sunt enim quis? Fugit repudiandae
-                      blanditiis accusamus quidem ex dolorum, eveniet rerum
-                      incidunt.
-                    </p>
-                  </details>
-                </div>
-              </div>
-              <div class="faqs-item">
-                <div class="faqs-item">
-                  <details>
-                    <summary>Do you offer a free trial edit?</summary>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Officia asperiores consectetur pariatur ullam commodi
-                      ducimus neque error inventore, soluta porro minima illo,
-                      deserunt aliquam. Dolor iste labore quos minus
-                      exercitationem.
-                    </p>
-                  </details>
-                </div>
-              </div>
-              <div class="faqs-item">
-                <div class="faqs-item">
-                  <details>
-                    <summary>How do I reset my Account password?</summary>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Molestiae optio dolores soluta quo laudantium magnam harum
-                      esse inventore reiciendis consectetur at et ad praesentium
-                      id in, adipisci amet reprehenderit. Dolor.
-                    </p>
-                  </details>
-                </div>
-              </div>
-            </div>
+            <div class="faqs-list"></div>
           </div>
         </div>
       </section>

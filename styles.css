@@ -67,7 +67,34 @@ nav {
 
   & ul {
     display: none;
+    &.active {
+      display: flex;
+      position: absolute;
+      background-color: var(--primary-color);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      /* display flex */
+      flex-direction: column;
+      padding: 50px 0 20px;
+      text-align: center;
+      width: 100%;
+    }
+    & a {
+      color: var(--white);
+    }
+
+    & span {
+      font-weight: 600;
+      position: absolute;
+      right: 15px;
+      top: 20px;
+    }
   }
+
+  
+
+  
 }
 
 p {
@@ -398,13 +425,21 @@ ul {
     & p {
       font-size: 18px;
     }
+  } 
+
+  .btn-nav {
+    display: none;
   }
 
-  /* .nav-container {
+  .nav-container {
     & ul {
       display: flex;
+
+      & a {
+        color: var(--paragraph-color);
+      }
     }
-  } */
+  }
 
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
@@ -434,10 +469,10 @@ ul {
 
   .services-list {
     grid-template-columns: repeat(3, 1fr);
-
-      .team-container {
-    grid-template-columns: 1fr 2fr auto;
   }
+
+  .team-container {
+    grid-template-columns: 1fr 2fr auto;
   }
 
   .team-list {
@@ -447,12 +482,9 @@ ul {
   .testimonials-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 }
 
 @media (min-width: 1280px) {
-
   .strategy-card {
     &:nth-child(2) {
       left: 50px;
