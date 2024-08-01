@@ -1,0 +1,159 @@
+{
+  "services": [
+    {
+      "id": 0,
+      "title": "Web Design",
+      "image": "./img/services/services-1.svg",
+      "description": "Nulla vitae elit libero, a pharetra augue. Donec id elit non miporta gravida at eget. Fusce dapibus tellus.",
+      "link": "/"
+    },
+
+    {
+      "id": 1,
+      "title": "Web Design",
+      "image": "./img/services/services-2.svg",
+      "description": "Maecenas faucibus mollis interdum. Vivamus sagittis lacus velaugue laoreet. Sed posuere consectetur.",
+      "link": "/"
+    },
+
+    {
+      "id": 2,
+      "title": "Web Design",
+      "image": "./img/services/services-3.svg",
+      "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.Praesent commodo cursus magna scelerisque.",
+      "link": "/"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "id": 0,
+      "author": "Coris Ambady",
+      "image": "./img/team/team1.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    },
+    {
+      "id": 1,
+      "author": "Coris Ambady",
+      "image": "./img/team/team2.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    },
+    {
+      "id": 2,
+      "author": "Coris Ambady",
+      "image": "./img/team/team3.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    },
+    {
+      "id": 3,
+      "author": "Coris Ambady",
+      "image": "./img/team/team4.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    },
+    {
+      "id": 4,
+      "author": "Coris Ambady",
+      "image": "./img/team/team5.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    },
+    {
+      "id": 5,
+      "author": "Coris Ambady",
+      "image": "./img/team/team6.svg",
+      "area": "Financials Analalyst",
+      "testimonials": "Vivamus sagittis lacus vel auguelaoreetrutrum faucibus dolor auctor. Vestibu lumid ligula porta felis euismod semper. Crasjusto odio dapibus facilisis sociis natoque penatibus."
+    }
+  ],
+
+  "faqs": [
+    {
+      "id": 0,
+      "question": "How do I get my subscription receipt?",
+      "answer": "Lorem ipsum dolor sit amet consectetur adipisicingelit.Accusamus officiis praesentium, recusandae hic commodi aliquam, unde sint cupiditate voluptates veritatis labore etminima architecto expedita! Accusamus perspiciatis harum repellat molestiae?"
+    },
+    {
+      "id": 1,
+      "question": "How do I get my subscription receipt?",
+      "answer": "Lorem ipsum dolor sit amet consectetur adipisicingelit.Accusamus officiis praesentium, recusandae hic commodi aliquam, unde sint cupiditate voluptates veritatis labore etminima architecto expedita! Accusamus perspiciatis harum repellat molestiae?"
+    },
+    {
+      "id": 2,
+      "question": "How do I get my subscription receipt?",
+      "answer": "Lorem ipsum dolor sit amet consectetur adipisicingelit.Accusamus officiis praesentium, recusandae hic commodi aliquam, unde sint cupiditate voluptates veritatis labore etminima architecto expedita! Accusamus perspiciatis harum repellat molestiae?"
+    },
+    {
+      "id": 3,
+      "question": "How do I get my subscription receipt?",
+      "answer": "Lorem ipsum dolor sit amet consectetur adipisicingelit.Accusamus officiis praesentium, recusandae hic commodi aliquam, unde sint cupiditate voluptates veritatis labore etminima architecto expedita! Accusamus perspiciatis harum repellat molestiae?"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 0,
+      "image": "./img/projects/project1.svg",
+      "title": "Project",
+      "category": "Category"
+    },
+    {
+      "id": 1,
+      "image": "./img/projects/project2.svg",
+      "title": "Project",
+      "category": "Category"
+    }
+  ],
+
+  "team": [
+    {
+      "id":0,
+      "image":"./img/team/team1.svg",
+      "name":"Coriss Ambady",
+      "area":"Financial Analyst",
+      "slogan":"Fermentum massa justo sit amet risus morbi leo."
+    },
+    {
+      "id":1,
+      "image":"./img/team/team1.svg",
+      "name":"Coriss Ambady",
+      "area":"Financial Analyst",
+      "slogan":"Fermentum massa justo sit amet risus morbi leo."
+    },
+    {
+      "id":2,
+      "image":"./img/team/team1.svg",
+      "name":"Coriss Ambady",
+      "area":"Financial Analyst",
+      "slogan":"Fermentum massa justo sit amet risus morbi leo."
+    },
+    {
+      "id":3,
+      "image":"./img/team/team1.svg",
+      "name":"Coriss Ambady",
+      "area":"Financial Analyst",
+      "slogan":"Fermentum massa justo sit amet risus morbi leo."
+    }
+  ],
+  "strategy-cards":
+ [
+  {
+    "id": 0,
+    "title": "Collect ideas",
+    "description": "Nulla vitae elit libero pharetra augue dapibus."
+  },
+  {
+    "id": 1,
+    "title": "Collect ideas",
+    "description": "Nulla vitae elit libero pharetra augue dapibus."
+  },
+  {
+    "id": 2,
+    "title": "Collect ideas",
+    "description": "Nulla vitae elit libero pharetra augue dapibus."
+  }
+ ]
+}
